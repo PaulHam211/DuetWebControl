@@ -1716,7 +1716,7 @@ function setPrintStatus(printing) {
 
 		if (isConnected) {
 			if ($("#auto_sleep").is(":checked")) {
-				sendGCode("M1");
+				sendGCode("M1"); // need to make this a URL, then use this to send URL to sonoff to turn off.
 				$("#auto_sleep").prop("checked", false);
 			}
 
